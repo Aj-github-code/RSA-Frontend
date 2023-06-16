@@ -1,0 +1,96 @@
+// Here you can add other styles
+
+ul.sidebar-nav::-webkit-scrollbar {
+    display: none;
+}
+.sidebar-nav {
+    margin: 2rem 0;
+
+   
+    .nav-icon {
+        margin-right: 1rem;
+    }
+
+    .nav-group-items {
+        .nav-link {
+            padding-left: calc(var(--cui-sidebar-nav-icon-width) + 1rem) !important;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 12px;
+        }
+    }
+
+    .nav-link {
+
+        &:hover,
+        &.active {
+            font-weight: bold;
+            color: var(--#{$prefix}sidebar-nav-link-hover-color);
+        }
+    }
+}
+
+.page-title {
+    margin-bottom: 1rem;
+}
+
+:root {
+    --ci-primary-color: $primary-base;
+}
+
+.simplebar-content {
+    position: relative;
+    padding: 15px 0;
+
+    &:before {
+        content: "";
+        width: var(--cui-sidebar-nav-icon-width);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        background: $primary-base;
+        z-index: -1;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+
+.dashboard-card {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    margin-top: 1.5rem;
+
+    h3 {
+        font-size: 1.5rem;
+        font-size: 500;
+    }
+
+    .dashboard-link {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-top: 3rem;
+
+        .large-icon {
+            width: 5rem;
+            height: 5rem;
+            fill: $primary-base;
+        }
+
+        .details-link {
+            font-size: 1rem;
+            color: $primary-base;
+
+            span {
+                display: inline-block;
+                padding: 0.3rem 0.5rem;
+                margin-right: 0.5rem;
+                border-right: 1px solid $primary-base;
+            }
+        }
+
+    }
+}
